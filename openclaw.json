@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.13",
-    "lastTouchedAt": "2026-03-22T10:40:58.989Z"
+    "lastTouchedAt": "2026-03-23T13:55:36.198Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-05T16:16:05.545Z",
@@ -229,13 +229,15 @@
   },
   "channels": {
     "feishu": {
-      "allowFrom": [],
-      "appId": "",
-      "appSecret": "",
+      "allowFrom": [
+        "ou_34ac9ddebbab2306e92f575553b38cdd"
+      ],
+      "appId": "cli_a94bfa3264789bc6",
+      "appSecret": "GhEKeCHD2jIafdDORjoDgwKcsvSRYhrQ",
       "connectionMode": "websocket",
-      "dmPolicy": "pairing",
+      "dmPolicy": "allowlist",
       "domain": "feishu",
-      "enabled": false,
+      "enabled": true,
       "groupAllowFrom": [],
       "groupPolicy": "open",
       "requireMention": true,
@@ -255,7 +257,7 @@
     },
     "auth": {
       "mode": "token",
-      "token": "8edcfe92-b598-4e7c-9841-e7b76eaa7199"
+      "token": "10c9745b-0e97-4249-adf0-2253474894a6"
     },
     "trustedProxies": [
       "::1",
@@ -393,10 +395,10 @@
       "openclaw-lark": {
         "enabled": true
       },
-      "wecom": {
+      "openclaw-weixin": {
         "enabled": true
       },
-      "openclaw-weixin": {
+      "wecom": {
         "enabled": true
       }
     },
@@ -440,19 +442,6 @@
         "resolvedAt": "2026-03-22T07:05:49.587Z",
         "installedAt": "2026-03-22T07:06:02.176Z"
       },
-      "wecom": {
-        "source": "npm",
-        "spec": "@wecom/wecom-openclaw-plugin",
-        "installPath": "/workspace/projects/extensions/wecom",
-        "version": "1.0.0",
-        "resolvedName": "@wecom/wecom-openclaw-plugin",
-        "resolvedVersion": "1.0.0",
-        "resolvedSpec": "@wecom/wecom-openclaw-plugin@1.0.0",
-        "integrity": "sha512-ql8jn4CCqFS/26VHqi0pQakRAM4rzlo4anZtUKnjoAc1Pvf+umq6AgyIZ8U4aNsN+BO8rjjhmu/2vGXX87A0zQ==",
-        "shasum": "d903bafcb970107b1d4629d1b26d9f8b4e6b5121",
-        "resolvedAt": "2026-03-08T06:36:42.450Z",
-        "installedAt": "2026-03-08T06:38:35.736Z"
-      },
       "openclaw-weixin": {
         "source": "npm",
         "spec": "@tencent-weixin/openclaw-weixin",
@@ -465,6 +454,19 @@
         "shasum": "244baf0a873683a9c350d0f0b5bc055c07b0eb39",
         "resolvedAt": "2026-03-22T07:06:05.866Z",
         "installedAt": "2026-03-22T07:06:09.564Z"
+      },
+      "wecom": {
+        "source": "npm",
+        "spec": "@wecom/wecom-openclaw-plugin",
+        "installPath": "/workspace/projects/extensions/wecom",
+        "version": "1.0.0",
+        "resolvedName": "@wecom/wecom-openclaw-plugin",
+        "resolvedVersion": "1.0.0",
+        "resolvedSpec": "@wecom/wecom-openclaw-plugin@1.0.0",
+        "integrity": "sha512-ql8jn4CCqFS/26VHqi0pQakRAM4rzlo4anZtUKnjoAc1Pvf+umq6AgyIZ8U4aNsN+BO8rjjhmu/2vGXX87A0zQ==",
+        "shasum": "d903bafcb970107b1d4629d1b26d9f8b4e6b5121",
+        "resolvedAt": "2026-03-08T06:36:42.450Z",
+        "installedAt": "2026-03-08T06:38:35.736Z"
       }
     }
   }
